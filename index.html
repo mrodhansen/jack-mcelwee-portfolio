@@ -4,966 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Jack McElwee · News Reporter</title>
-    <meta
-      name="description"
-      content="Portfolio of Jack McElwee, news reporter for The Arbiter, Boise State University's independent student newspaper."
-    />
+    <meta name="description" content="Portfolio of Jack McElwee, news reporter for The Arbiter, Boise State University&#x27;s independent student newspaper." />
     <meta name="theme-color" content="#f6f6f4" />
     <meta property="og:type" content="profile" />
     <meta property="og:title" content="Jack McElwee · News Reporter" />
-    <meta
-      property="og:description"
-      content="Reporting on Boise State, the city of Boise and Idaho for The Arbiter."
-    />
-    <meta
-      property="og:image"
-      content="https://mrodhansen.github.io/jack-mcelwee-portfolio/assets/jack-mcelwee.jpg"
-    />
+    <meta property="og:description" content="Reporting on Boise State, the city of Boise and Idaho for The Arbiter." />
+    <meta property="og:image" content="https://mrodhansen.github.io/jack-mcelwee-portfolio/assets/jack-mcelwee.jpg" />
     <meta name="twitter:card" content="summary" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111'/%3E%3Ctext x='16' y='21' font-family='monospace' font-size='13' font-weight='700' fill='%23fff' text-anchor='middle'%3EJM%3C/text%3E%3C/svg%3E"
-    />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111'/%3E%3Ctext x='16' y='21' font-family='monospace' font-size='13' font-weight='700' fill='%23fff' text-anchor='middle'%3EJM%3C/text%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://i0.wp.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      :root {
-        --paper: #f6f6f4;
-        --surface: #ffffff;
-        --surface-2: #efefec;
-        --ink: #111111;
-        --ink-soft: #333333;
-        --muted: #666666;
-        --line: #111111;
-        --sans: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif;
-        --mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
-        --serif: 'IBM Plex Serif', Georgia, serif;
-        --rail: 11.5rem;
-        --phone-rail: calc(2.75rem + env(safe-area-inset-left, 0px));
-        color-scheme: light;
-      }
-
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
-
-      html {
-        scroll-behavior: smooth;
-        -webkit-text-size-adjust: 100%;
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        html {
-          scroll-behavior: auto;
-        }
-      }
-
-      body {
-        margin: 0;
-        background: var(--paper);
-        color: var(--ink);
-        font-family: var(--sans);
-        font-size: 1rem;
-        line-height: 1.55;
-        -webkit-font-smoothing: antialiased;
-      }
-
-      a {
-        color: inherit;
-      }
-
-      img {
-        display: block;
-        max-width: 100%;
-      }
-
-      :focus-visible {
-        outline: 2px solid var(--ink);
-        outline-offset: 3px;
-      }
-
-      .sr-only {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        clip: rect(0 0 0 0);
-        white-space: nowrap;
-      }
-
-      .skip {
-        position: absolute;
-        top: 0;
-        left: -999px;
-        z-index: 20;
-        padding: 0.6rem 0.9rem;
-        background: var(--ink);
-        color: #fff;
-        font-size: 0.72rem;
-        font-weight: 600;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-      }
-
-      .skip:focus {
-        top: 0.5rem;
-        left: 0.5rem;
-      }
-
-      /* Small uppercase captions: the Index theme's names-as-captions voice. */
-      .label {
-        margin: 0;
-        font-size: 0.72rem;
-        font-weight: 600;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-      }
-
-      .muted {
-        color: var(--muted);
-      }
-
-      /* Frame: white side rail with a hard rule, paper-colored page. */
-      .frame {
-        display: grid;
-        grid-template-columns: var(--rail) minmax(0, 1fr);
-        min-height: 100vh;
-      }
-
-      .rail {
-        position: sticky;
-        top: 0;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        overflow: auto;
-        border-right: 1px solid var(--line);
-        background: var(--surface);
-        padding: 1rem 0;
-      }
-
-      .mark {
-        padding: 0 0.9rem 0.8rem calc(0.9rem + 3px);
-        font-size: 0.72rem;
-        font-weight: 600;
-        letter-spacing: 0.16em;
-        line-height: 1.4;
-        text-decoration: none;
-        text-transform: uppercase;
-      }
-
-      .nav {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .nav a {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 0.5rem;
-        min-height: 2.75rem;
-        border-left: 3px solid transparent;
-        padding: 0 0.9rem;
-        color: var(--muted);
-        font-size: 0.72rem;
-        font-weight: 600;
-        letter-spacing: 0.08em;
-        text-decoration: none;
-        text-transform: uppercase;
-      }
-
-      .nav a:hover {
-        color: var(--ink);
-      }
-
-      .nav a[aria-current] {
-        border-left-color: var(--ink);
-        color: var(--ink);
-      }
-
-      .nav .n {
-        font-family: var(--mono);
-        font-weight: 500;
-        letter-spacing: 0;
-      }
-
-      .nav .out {
-        margin-top: 0.5rem;
-        border-top: 1px solid var(--line);
-      }
-
-      .rail-foot {
-        margin: auto 0 0;
-        padding: 0.8rem 0.9rem 0 calc(0.9rem + 3px);
-        color: var(--muted);
-        font-size: 0.75rem;
-        line-height: 1.45;
-      }
-
-      .rail-foot strong {
-        display: block;
-        color: var(--ink);
-        font-weight: 600;
-      }
-
-      .main {
-        width: min(62rem, 100%);
-        padding: 2.5rem 2rem 3rem;
-      }
-
-      /* Overview */
-      .hero {
-        padding-bottom: 2.5rem;
-      }
-
-      .hero h1 {
-        margin: 0.9rem 0 0;
-        font-size: clamp(2.9rem, 7.2vw, 5.4rem);
-        font-weight: 600;
-        letter-spacing: -0.04em;
-        line-height: 0.95;
-      }
-
-      .lede {
-        max-width: 38rem;
-        margin: 1.4rem 0 0;
-        color: var(--ink-soft);
-        font-size: 1.2rem;
-        line-height: 1.5;
-      }
-
-      .actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.75rem;
-        margin-top: 1.75rem;
-      }
-
-      .btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        min-height: 2.75rem;
-        border: 1px solid var(--ink);
-        background: var(--surface);
-        padding: 0 1.1rem;
-        font-size: 0.72rem;
-        font-weight: 600;
-        letter-spacing: 0.12em;
-        text-decoration: none;
-        text-transform: uppercase;
-      }
-
-      .btn:hover {
-        background: var(--ink);
-        color: #fff;
-      }
-
-      .btn-solid {
-        background: var(--ink);
-        color: #fff;
-      }
-
-      .btn-solid:hover {
-        background: var(--ink-soft);
-      }
-
-      /* Numbers first, names as captions. */
-      .stats {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        margin: 2.5rem 0 0;
-        border: 1px solid var(--line);
-        background: var(--surface);
-      }
-
-      .stat {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: flex-end;
-        border-left: 1px solid var(--line);
-        padding: 1rem 1rem 0.9rem;
-      }
-
-      .stat:first-child {
-        border-left: 0;
-      }
-
-      .stat dd {
-        margin: 0;
-        font-family: var(--mono);
-        font-size: 2.1rem;
-        font-weight: 500;
-        letter-spacing: -0.02em;
-        line-height: 1.1;
-      }
-
-      .stat dt {
-        margin-top: 0.35rem;
-        color: var(--muted);
-        font-size: 0.68rem;
-        font-weight: 600;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-      }
-
-      /* Sections */
-      .section {
-        padding-top: 3rem;
-        scroll-margin-top: 1rem;
-      }
-
-      .section-head {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-end;
-        justify-content: space-between;
-        gap: 1rem;
-        border-bottom: 1px solid var(--line);
-        padding-bottom: 0.9rem;
-      }
-
-      .section-head h2 {
-        display: flex;
-        align-items: baseline;
-        gap: 0.75rem;
-        margin: 0;
-      }
-
-      .section-head .big {
-        font-family: var(--mono);
-        font-size: 1.55rem;
-        font-weight: 500;
-        letter-spacing: -0.02em;
-        line-height: 1;
-      }
-
-      .filters {
-        display: flex;
-        border: 1px solid var(--line);
-        background: var(--surface);
-      }
-
-      .filters button {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.45rem;
-        min-height: 2.25rem;
-        border: 0;
-        border-left: 1px solid var(--line);
-        background: transparent;
-        color: var(--muted);
-        cursor: pointer;
-        padding: 0 0.85rem;
-        font: inherit;
-        font-size: 0.68rem;
-        font-weight: 600;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-      }
-
-      .filters button:first-child {
-        border-left: 0;
-      }
-
-      .filters button:hover {
-        color: var(--ink);
-      }
-
-      .filters button[aria-pressed='true'] {
-        background: var(--ink);
-        color: #fff;
-      }
-
-      .filters .n {
-        font-family: var(--mono);
-        font-weight: 500;
-        letter-spacing: 0;
-      }
-
-      /* Stories */
-      .stories {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-
-      .story {
-        scroll-margin-top: 1rem;
-        display: grid;
-        grid-template-columns: 3.25rem 14rem minmax(0, 1fr);
-        gap: 1.25rem;
-        border-bottom: 1px solid var(--line);
-        padding: 1.5rem 0;
-      }
-
-      .story[hidden] {
-        display: none;
-      }
-
-      .story-no {
-        padding-top: 0.1rem;
-        font-family: var(--mono);
-        font-size: 1.55rem;
-        font-weight: 500;
-        letter-spacing: -0.02em;
-        line-height: 1;
-      }
-
-      .story-media {
-        margin: 0;
-      }
-
-      .story-img {
-        position: relative;
-        aspect-ratio: 3 / 2;
-        overflow: hidden;
-        border: 1px solid var(--line);
-        background: var(--surface-2);
-      }
-
-      .story-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: grayscale(1);
-        transition: filter 0.25s ease;
-      }
-
-      .story:hover .story-img img,
-      .story:focus-within .story-img img {
-        filter: none;
-      }
-
-      @media (hover: none) {
-        .story-img img {
-          filter: none;
-        }
-      }
-
-      .story-img.broken img {
-        display: none;
-      }
-
-      .story-img.broken::after {
-        content: 'The Arbiter';
-        position: absolute;
-        inset: 0;
-        display: grid;
-        place-items: center;
-        color: var(--muted);
-        font-size: 0.68rem;
-        font-weight: 600;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-      }
-
-      .credit {
-        margin-top: 0.45rem;
-        color: var(--muted);
-        font-family: var(--mono);
-        font-size: 0.64rem;
-        line-height: 1.4;
-      }
-
-      .meta {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.3rem 0.9rem;
-        margin: 0;
-        color: var(--muted);
-        font-size: 0.68rem;
-        font-weight: 600;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-      }
-
-      .meta .sec {
-        color: var(--ink);
-      }
-
-      .meta .words {
-        font-family: var(--mono);
-        font-weight: 500;
-        letter-spacing: 0;
-        text-transform: none;
-      }
-
-      .story h3 {
-        margin: 0.5rem 0 0;
-        font-size: 1.3rem;
-        font-weight: 600;
-        letter-spacing: -0.01em;
-        line-height: 1.25;
-      }
-
-      .story h3 a {
-        text-decoration: none;
-      }
-
-      .story h3 a:hover {
-        text-decoration: underline;
-        text-decoration-thickness: 1px;
-        text-underline-offset: 0.18em;
-      }
-
-      .dek {
-        margin: 0.55rem 0 0;
-        color: var(--ink-soft);
-        font-size: 0.98rem;
-        line-height: 1.55;
-      }
-
-      .with {
-        margin: 0.5rem 0 0;
-        color: var(--muted);
-        font-size: 0.85rem;
-      }
-
-      .cta {
-        display: inline-block;
-        margin-top: 0.85rem;
-        border-bottom: 1px solid var(--ink);
-        padding-bottom: 0.1rem;
-        font-size: 0.68rem;
-        font-weight: 600;
-        letter-spacing: 0.12em;
-        text-decoration: none;
-        text-transform: uppercase;
-      }
-
-      .cta:hover {
-        background: var(--ink);
-        color: #fff;
-      }
-
-      /* Full text: a bar under each story that opens the whole article. */
-      .full {
-        grid-column: 2 / -1;
-      }
-
-      .full > summary {
-        display: flex;
-        align-items: center;
-        gap: 0.9rem;
-        min-height: 2.75rem;
-        border: 1px solid var(--line);
-        background: var(--surface);
-        cursor: pointer;
-        list-style: none;
-        padding: 0 1rem;
-        font-size: 0.72rem;
-        font-weight: 600;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-      }
-
-      .full > summary::-webkit-details-marker {
-        display: none;
-      }
-
-      .full > summary::after {
-        content: '+';
-        margin-left: auto;
-        font-family: var(--mono);
-        font-size: 1.15rem;
-        font-weight: 500;
-        letter-spacing: 0;
-      }
-
-      .full[open] > summary::after {
-        content: '−';
-      }
-
-      .full > summary:hover,
-      .full[open] > summary {
-        background: var(--ink);
-        color: #fff;
-      }
-
-      .full .words {
-        color: var(--muted);
-        font-family: var(--mono);
-        font-weight: 500;
-        letter-spacing: 0;
-        text-transform: none;
-      }
-
-      .full > summary:hover .words,
-      .full[open] > summary .words {
-        color: #b5b5b5;
-      }
-
-      .full-close,
-      .full[open] .full-open {
-        display: none;
-      }
-
-      .full[open] .full-close {
-        display: inline;
-      }
-
-      .article {
-        border: 1px solid var(--line);
-        border-top: 0;
-        background: var(--surface);
-        padding: 2rem 2.25rem;
-      }
-
-      .article p {
-        max-width: 40rem;
-        margin: 0 0 1.15em;
-        color: #1d1d1d;
-        font-family: var(--serif);
-        font-size: 1.1rem;
-        line-height: 1.75;
-      }
-
-      .article a {
-        text-decoration-thickness: 1px;
-        text-underline-offset: 0.18em;
-      }
-
-      .article .byline {
-        margin-bottom: 1.6rem;
-        border-bottom: 1px solid var(--line);
-        padding-bottom: 0.9rem;
-        color: var(--muted);
-        font-family: var(--sans);
-        font-size: 0.68rem;
-        font-weight: 600;
-        letter-spacing: 0.14em;
-        line-height: 1.5;
-        text-transform: uppercase;
-      }
-
-      .article .source {
-        max-width: none;
-        margin: 2rem 0 0;
-        border-top: 1px solid var(--line);
-        padding-top: 1rem;
-        color: var(--muted);
-        font-family: var(--sans);
-        font-size: 0.85rem;
-        line-height: 1.5;
-      }
-
-      .full-done {
-        display: inline-flex;
-        align-items: center;
-        min-height: 2.75rem;
-        margin-top: 1.25rem;
-        border: 1px solid var(--ink);
-        background: var(--surface);
-        color: var(--ink);
-        cursor: pointer;
-        padding: 0 1.1rem;
-        font: inherit;
-        font-size: 0.72rem;
-        font-weight: 600;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-      }
-
-      .full-done:hover {
-        background: var(--ink);
-        color: #fff;
-      }
-
-      .story.lead {
-        grid-template-columns: 3.25rem minmax(0, 1.2fr) minmax(0, 1fr);
-        padding-top: 1.75rem;
-      }
-
-      .story.lead h3 {
-        font-size: 1.9rem;
-        letter-spacing: -0.02em;
-        line-height: 1.15;
-      }
-
-      .story.lead .dek {
-        font-size: 1.05rem;
-      }
-
-      /* About */
-      .about {
-        display: grid;
-        grid-template-columns: 15rem minmax(0, 1fr);
-        gap: 2rem;
-        padding-top: 1.75rem;
-      }
-
-      .portrait {
-        align-self: start;
-        margin: 0;
-      }
-
-      .portrait img {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 1;
-        object-fit: cover;
-        border: 1px solid var(--line);
-        background: var(--surface-2);
-      }
-
-      .portrait figcaption {
-        margin-top: 0.5rem;
-      }
-
-      .bio p {
-        max-width: 38rem;
-        margin: 0 0 1rem;
-        color: var(--ink-soft);
-        font-size: 1.05rem;
-        line-height: 1.65;
-      }
-
-      .bio p:first-child {
-        color: var(--ink);
-        font-size: 1.35rem;
-        font-weight: 500;
-        letter-spacing: -0.01em;
-        line-height: 1.4;
-      }
-
-      .facts {
-        margin: 1.75rem 0 0;
-        border-top: 1px solid var(--line);
-        background: var(--surface);
-      }
-
-      .facts div {
-        display: grid;
-        grid-template-columns: 9.5rem minmax(0, 1fr);
-        gap: 1rem;
-        border-bottom: 1px solid var(--line);
-        padding: 0.7rem 0.9rem;
-      }
-
-      .facts dt {
-        color: var(--muted);
-        font-size: 0.68rem;
-        font-weight: 600;
-        letter-spacing: 0.14em;
-        line-height: 1.9;
-        text-transform: uppercase;
-      }
-
-      .facts dd {
-        margin: 0;
-        font-family: var(--mono);
-        font-size: 0.9rem;
-      }
-
-      .facts a {
-        text-underline-offset: 0.18em;
-      }
-
-      .foot {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 0.5rem 1.5rem;
-        margin-top: 4rem;
-        border-top: 1px solid var(--line);
-        padding-top: 1rem;
-        color: var(--muted);
-        font-size: 0.75rem;
-      }
-
-      .foot p {
-        margin: 0;
-      }
-
-      @media (max-width: 1023px) and (min-width: 768px) {
-        .story {
-          grid-template-columns: 2.75rem 11rem minmax(0, 1fr);
-        }
-
-        .story.lead {
-          grid-template-columns: 2.75rem minmax(0, 1fr) minmax(0, 1fr);
-        }
-
-        .story.lead h3 {
-          font-size: 1.55rem;
-        }
-
-        .about {
-          grid-template-columns: 12rem minmax(0, 1fr);
-        }
-      }
-
-      /* Phone: the rail becomes a thin fixed strip with sideways tabs. */
-      @media (max-width: 767px) {
-        .frame {
-          display: block;
-        }
-
-        .rail {
-          position: fixed;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          z-index: 10;
-          width: var(--phone-rail);
-          height: auto;
-          padding: env(safe-area-inset-top, 0px) 0 0 env(safe-area-inset-left, 0px);
-        }
-
-        .mark,
-        .rail-foot,
-        .nav .n {
-          display: none;
-        }
-
-        .nav {
-          height: 100%;
-        }
-
-        .nav a {
-          flex: 1;
-          justify-content: center;
-          min-height: 0;
-          border-left: 0;
-          padding: 0;
-          font-size: 0.62rem;
-          letter-spacing: 0.12em;
-          writing-mode: vertical-rl;
-        }
-
-        .nav a[aria-current] {
-          background: var(--ink);
-          color: #fff;
-        }
-
-        .nav .out {
-          margin-top: 0;
-        }
-
-        .main {
-          width: auto;
-          margin-left: var(--phone-rail);
-          padding: 1.5rem 1rem 2.5rem;
-        }
-
-        .lede {
-          font-size: 1.08rem;
-        }
-
-        .stats {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-
-        .stat:nth-child(3) {
-          border-left: 0;
-        }
-
-        .stat:nth-child(n + 3) {
-          border-top: 1px solid var(--line);
-        }
-
-        .stat dd {
-          font-size: 1.7rem;
-        }
-
-        .story,
-        .story.lead {
-          grid-template-columns: 2rem minmax(0, 1fr);
-          gap: 0.9rem 0.75rem;
-        }
-
-        .story-no {
-          grid-row: 1 / span 2;
-          font-size: 1.1rem;
-        }
-
-        .story-media,
-        .story-body {
-          grid-column: 2;
-        }
-
-        .story.lead h3 {
-          font-size: 1.45rem;
-        }
-
-        .full {
-          grid-column: 1 / -1;
-        }
-
-        .article {
-          padding: 1.4rem 1rem 1.5rem;
-        }
-
-        .article p {
-          font-size: 1.04rem;
-          line-height: 1.7;
-        }
-
-        .about {
-          grid-template-columns: minmax(0, 1fr);
-          gap: 1.5rem;
-        }
-
-        .portrait {
-          max-width: 14rem;
-        }
-
-        .bio p:first-child {
-          font-size: 1.2rem;
-        }
-
-        .facts div {
-          grid-template-columns: minmax(0, 1fr);
-          gap: 0.1rem;
-        }
-      }
-
-      /* Printing gives a clean clip book: every story opens in full. */
-      @media print {
-        .rail,
-        .skip,
-        .actions,
-        .filters,
-        .full > summary,
-        .full-done {
-          display: none;
-        }
-
-        .frame {
-          display: block;
-        }
-
-        .main {
-          width: auto;
-          margin: 0;
-          padding: 0;
-        }
-
-        .story-media,
-        .story-body,
-        .article p {
-          break-inside: avoid;
-        }
-
-        .article {
-          border: 0;
-          padding: 1rem 0 0;
-        }
-
-        .story-img img {
-          filter: none;
-        }
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet" />
+    <link href="assets/site.css" rel="stylesheet" />
   </head>
   <body>
     <a class="skip" href="#work">Skip to stories</a>
@@ -974,11 +27,7 @@
           <a href="#top">Overview</a>
           <a href="#work">Work <span class="n">13</span></a>
           <a href="#about">About</a>
-          <a
-            class="out"
-            href="https://www.arbiteronline.com/author/jackmcelwee/"
-            target="_blank"
-            rel="noopener"
+          <a class="out" href="https://www.arbiteronline.com/author/jackmcelwee/" target="_blank" rel="noopener"
             >Arbiter <span class="n" aria-hidden="true">↗</span></a
           >
         </nav>
@@ -998,11 +47,7 @@
           </p>
           <div class="actions">
             <a class="btn btn-solid" href="#work">Read the work</a>
-            <a
-              class="btn"
-              href="https://www.arbiteronline.com/author/jackmcelwee/"
-              target="_blank"
-              rel="noopener"
+            <a class="btn" href="https://www.arbiteronline.com/author/jackmcelwee/" target="_blank" rel="noopener"
               >Author page on The Arbiter <span aria-hidden="true">↗</span></a
             >
           </div>
@@ -1045,9 +90,7 @@
                     onerror="this.parentNode.classList.add('broken')"
                   />
                 </div>
-                <figcaption class="credit">
-                  Photo: Lauren Paterson / Boise State Public Radio
-                </figcaption>
+                <figcaption class="credit">Photo: Lauren Paterson / Boise State Public Radio</figcaption>
               </figure>
               <div class="story-body">
                 <p class="meta">
@@ -1055,51 +98,9 @@
                   <time datetime="2026-11-16">Nov. 16, 2026</time>
                   <span class="words">519 words</span>
                 </p>
-                <h3>
-                  <a href="#s13" data-open="s13">Idaho tree to represent the state at U.S. Capitol</a>
-                </h3>
-                <p class="dek">
-                  Idaho is sending a piece of Christmas spirit to Washington, D.C. this holiday
-                  season. A 76-foot tall Engelmann Spruce from the Nez Perce-Clearwater National
-                  Forest has been selected as this year's U.S. Capitol Christmas tree.
-                </p>
-                <a class="cta" href="https://www.arbiteronline.com/2026/11/16/idaho-tree-to-represent-the-state-at-u-s-capitol/" target="_blank" rel="noopener"
-                  >Original on The Arbiter <span aria-hidden="true">↗</span></a
-                >
+                <h3><a href="stories/idaho-tree-to-represent-the-state-at-u-s-capitol/">Idaho tree to represent the state at U.S. Capitol</a></h3>
+                <p class="dek">Idaho is sending a piece of Christmas spirit to Washington, D.C. this holiday season. A 76-foot tall Engelmann Spruce from the Nez Perce-Clearwater National Forest has been selected as this year’s U.S. Capitol Christmas tree.</p>
               </div>
-              <details class="full">
-                <summary>
-                  <span class="full-open">Read the full story</span>
-                  <span class="full-close">Close the story</span>
-                  <span class="words">519 words</span>
-                </summary>
-                <div class="article">
-                  <p class="byline">By Jack McElwee · The Arbiter · Nov. 16, 2026</p>
-                  <p>Idaho is sending a piece of Christmas spirit to Washington, D.C. this holiday season.</p>
-                  <p>A 76-foot tall Engelmann Spruce from the Nez Perce-Clearwater National Forest has been selected as this year’s U.S. Capitol Christmas tree.</p>
-                  <p>The selection process took more than a year and began with U.S. Forest Service workers scouting trees in the selected forest with suitable shapes.</p>
-                  <p>“Ultimately, this tree was selected by the architect at the Capitol’s office in Washington D.C.,” Zach Peterson, staff officer with the Nez Perce-Clearwater National Forest, said. “They sent the Executive Director of Grounds and Arboretum out, and we showed him 12 trees. He liked this one.”</p>
-                  <p>The tree is set to stand in the U.S. Capitol’s West Lawn where an Idaho fourth grader will help light it during an arrival ceremony in December.</p>
-                  <p>Boise Cascade was chosen to transport the tree from Idaho to Washington, D.C. The Boise-headquartered company will transport the tree on a specially built trailer, with four drivers taking turns behind the wheel throughout the journey.</p>
-                  <p>“It didn’t take long for us to accept,” Rebecca Troescher, senior communications specialist at Boise Cascade, said. “It’s a tremendous honor to be chosen, not only to participate, but have the responsibility of getting the tree there.”</p>
-                  <p>The “People’s Tree” is a national tradition which originated in 1964 when Speaker of the House, John W. McCormack suggested a tree be planted on the Capitol grounds.</p>
-                  <p>After the original tree died in 1967 after a snowstorm, the Architect of the Capitol turned to the forest service to provide a replacement. Since then, a different national forest supplies the tree each year.</p>
-                  <p>This year’s tree is touring towns and cities across the country on its way to the nation’s capitol. Idaho stops include Twin Falls, Idaho Falls and Craters of the Moon National Monument.</p>
-                  <p>At Craters of the Moon, a live band and a Smoky the Bear mascot welcomed the tree.</p>
-                  <p>A window on the back of the tree’s trailer gave onlookers a first-hand look at the Idaho-inspired ornaments decorating the tree. Markers and ladders were also available for people to sign the banner covering the trailer.</p>
-                  <p>Among the spectators, one sentiment was consistent: Idahoans are proud the tree is coming from their state.</p>
-                  <p>“It’s a proud tradition, but to have it be on the 250th [anniversary], it’s a big deal,” said Matthew Conde, public affairs director for AAA Idaho. “Obviously they’ve chosen a different National Forest every year for the last 56 [years] so it is a big deal. We got very lucky.”</p>
-                  <p>Conde and AAA are providing emergency roadside support for the tree’s convoy as it makes its way east.</p>
-                  <p>“It’s just one of those things that when you live in Idaho, you’ve got to go see,” said Ed Millspaugh of West Yellowstone, Mont.</p>
-                  <p>This is the third time Idaho has supplied the U.S. Capitol Christmas tree, following 2003 and 2016.</p>
-                  <p>“For most of us employees, it’s once in a career opportunity,” Peterson said. “It’s just a really awesome opportunity to share a little bit about our forest and the spirit of Christmas, and share this tree with the whole country.”</p>
-                  <p class="source">
-                    First published in The Arbiter on Nov. 16, 2026.
-                    <a href="https://www.arbiteronline.com/2026/11/16/idaho-tree-to-represent-the-state-at-u-s-capitol/" target="_blank" rel="noopener">Read the original <span aria-hidden="true">↗</span></a>
-                  </p>
-                  <button type="button" class="full-done" data-close="s13">Close the story</button>
-                </div>
-              </details>
             </li>
 
             <li class="story" id="s12" data-section="news">
@@ -1108,7 +109,7 @@
                 <div class="story-img">
                   <img
                     src="https://i0.wp.com/www.arbiteronline.com/wp-content/uploads/2026/11/10-17-STOCK-BryceGoldinger-ArbiterOnline-8.jpg?w=900&amp;ssl=1"
-                    alt="Albertsons Stadium, whose east parking lot is one of Boise's opportunity zones"
+                    alt="Albertsons Stadium, whose east parking lot is one of Boise’s opportunity zones"
                     loading="lazy"
                     onerror="this.parentNode.classList.add('broken')"
                   />
@@ -1121,54 +122,9 @@
                   <time datetime="2026-11-13">Nov. 13, 2026</time>
                   <span class="words">619 words</span>
                 </p>
-                <h3>
-                  <a href="#s12" data-open="s12">‘It's in the name right?’ Opportunity zones bring possibility for significant
-                    campus development</a>
-                </h3>
-                <p class="dek">
-                  The U.S. Treasury approved 25 opportunity zones in Idaho on Oct. 1, with five
-                  located in Boise and one covering the entirety of Boise State's campus.
-                </p>
-                <a class="cta" href="https://www.arbiteronline.com/2026/11/13/opportunity-zones/" target="_blank" rel="noopener"
-                  >Original on The Arbiter <span aria-hidden="true">↗</span></a
-                >
+                <h3><a href="stories/opportunity-zones/">‘It’s in the name right?’ Opportunity zones bring possibility for significant campus development</a></h3>
+                <p class="dek">The U.S. Treasury approved 25 opportunity zones in Idaho on Oct. 1, with five located in Boise and one covering the entirety of Boise State’s campus.</p>
               </div>
-              <details class="full">
-                <summary>
-                  <span class="full-open">Read the full story</span>
-                  <span class="full-close">Close the story</span>
-                  <span class="words">619 words</span>
-                </summary>
-                <div class="article">
-                  <p class="byline">By Jack McElwee · The Arbiter · Nov. 13, 2026</p>
-                  <p>Boise State may be seeing increased development thanks to a federal program designed to foster growth.</p>
-                  <p>The U.S. Treasury approved 25 opportunity zones in Idaho on Oct. 1, with five located in Boise and one covering the entirety of Boise State’s campus.</p>
-                  <p>An opportunity zone is an area where private developers qualify for federal tax benefits which incentivize development on that land.</p>
-                  <p>“This is really designed to encourage private investment in communities and areas of our city that are well positioned for growth,” Kiah Jones, Boise Mayor’s Office housing advisor said. “For Boise, we see this as a tool to really attract private investment into housing, business, commercial development, and redevelopment of underutilized properties.”</p>
-                  <p>While the city recommends the zones, it does not own the land within them.</p>
-                  <p>“The city will be involved when people come in and get permits for new development,” Jones said. “But for now, really, this is a tool to see what the market will bring to those areas.”</p>
-                  <p>One of Boise’s opportunity zones encompasses the entirety of Boise State’s campus, stretching from Broadway Avenue to Capitol Boulevard, with the Boise River serving as the northern boundary and Boise Avenue marking the southern boundary.</p>
-                  <p>Associate Vice President for Campus Operations Drew Alexander said there are no immediate plans to develop the land. However, he said the opportunity zones will be used as a tool as the university moves forward with its <a href="https://www.boisestate.edu/operations/campus-master-plan/10-year-campus-master-plan-2025-2034/#academic-and-research" target="_blank" rel="noopener">10-Year Plan</a>.</p>
-                  <p>According to the 10-Year Plan, the university will need an additional 260,000 square feet of academic space by 2033.</p>
-                  <p>“At a high level, [opportunity zones] could be a mechanism to support a lot of that,” Alexander said. “We just don’t have concrete plans or a blueprint, so to speak, of how we plan to deploy it or implement it right here in the moment.”</p>
-                  <p>The zone designation could also play a role in the potential future development of Albertson Stadium’s east parking lot.</p>
-                  <p><a href="https://www.boisestate.edu/president/blog/2026/09/25/project-announcement-from-president-hahn/" target="_blank" rel="noopener">In a letter</a> to the Boise State community titled “Project Announcement” President David W. Hahn said the university is exploring a potential development project in the east parking lot that would bring a significant economic impact to the city.</p>
-                  <p>“Potential uses could include hotel, conference, event, retail, dining, housing and parking options,” Hahn wrote. “The final mix will be shaped by feasibility, community value and the potential to generate sustainable revenue.”</p>
-                  <p>Alexander said opportunity zones would likely impact the development of this project by being a part of a potential financing plan should the project move forward.</p>
-                  <p>“If [the east parking lot project] were to move forward, that I think would very likely be a component of the financing plan for a project like that,” Alexander said. “We are still well within just a feasibility phase on that project.”</p>
-                  <p>Beyond the east parking lot project, the designation could also encourage other developments on or around campus — possibly in the form of residence halls.</p>
-                  <p>“I would look at what higher education institutions have typically done under a public-private partnership delivery method,” Alexander said. “Most frequently you see student</p>
-                  <p>housing being delivered in a public-private partnership.”</p>
-                  <p>One of these public-private partnerships was used to build Kirwan-Blanding Hall at the <a href="https://uknow.uky.edu/campus-news/uk-celebrates-opening-kirwan-blanding-hall" target="_blank" rel="noopener">University of Kentucky</a>, a four-story, 649-bed residence hall that opened in August 2026. The residence hall was made possible through an $81 million dollar partnership with real estate development firm Greystar.</p>
-                  <p>While specific development plans remain uncertain, the opportunity zones could provide new financial opportunities for future Boise developments. Alexander recommended looking at Boise State’s 10-Year Plan for future projects.</p>
-                  <p>“We’re excited for the selection and the designation that’s been made official,” Alexander said. “And looking forward to seeing how the tool can be an opportunity. It’s in the name right?”</p>
-                  <p class="source">
-                    First published in The Arbiter on Nov. 13, 2026.
-                    <a href="https://www.arbiteronline.com/2026/11/13/opportunity-zones/" target="_blank" rel="noopener">Read the original <span aria-hidden="true">↗</span></a>
-                  </p>
-                  <button type="button" class="full-done" data-close="s12">Close the story</button>
-                </div>
-              </details>
             </li>
 
             <li class="story" id="s11" data-section="culture">
@@ -1190,52 +146,9 @@
                   <time datetime="2026-11-12">Nov. 12, 2026</time>
                   <span class="words">537 words</span>
                 </p>
-                <h3>
-                  <a href="#s11" data-open="s11">Hall councils serve students behind the scenes</a>
-                </h3>
-                <p class="dek">
-                  A little-known student-led leadership organization operates inside of university
-                  residence halls, serving residents through event planning, advocacy and
-                  community outreach.
-                </p>
-                <a class="cta" href="https://www.arbiteronline.com/2026/11/12/hall-councils-serve-students-behind-the-scenes/" target="_blank" rel="noopener"
-                  >Original on The Arbiter <span aria-hidden="true">↗</span></a
-                >
+                <h3><a href="stories/hall-councils-serve-students-behind-the-scenes/">Hall councils serve students behind the scenes</a></h3>
+                <p class="dek">A little-known student-led leadership organization operates inside of university residence halls, serving residents through event planning, advocacy and community outreach.</p>
               </div>
-              <details class="full">
-                <summary>
-                  <span class="full-open">Read the full story</span>
-                  <span class="full-close">Close the story</span>
-                  <span class="words">537 words</span>
-                </summary>
-                <div class="article">
-                  <p class="byline">By Jack McElwee · The Arbiter · Nov. 12, 2026</p>
-                  <p>A little-known student-led leadership organization operates inside of university residence halls.</p>
-                  <p>Hall Councils exist to serve the students living in their halls through event planning, advocating for residents, and community outreach.</p>
-                  <p>They are distinct from Resident Advisors because students organize events themselves, with limited assistance from university staff, according to Liam Szlachtowski, area director for Chaffee, Syringa and Sawtooth Halls, Honors College and Lincoln Townhomes.</p>
-                  <p>“A pretty prime example of how this is different from typical hall programming, which is done by the RA staff, is that hall councils are run by the students that are in that building,” Szlachtowski said. “Their purpose is to contribute to a positive, collaborative and engaging educational community by representing and acting upon residents’ needs and problems.”</p>
-                  <p>Currently there are five separate hall councils, each serving a different area of campus. For instance, Sawtooth Hall, Honors College, and Lincoln Townhomes make up one hall council.</p>
-                  <p>The combined hall councils benefit from a bigger budget and larger pool of people to collaborate with according to Szlachtowski.</p>
-                  <p>Another combined hall council covers Driscoll, Kaiser, Morrison, Taylor, Syringa and Chaffee Halls. Towers Hall, Osprey and University Suites and Square have their own councils due to their distance from other residence halls.</p>
-                  <p>Hall councils meet once weekly to plan events and discuss issues relating to student life.</p>
-                  <p>Asher Almanza, president of Driscoll, Kaiser, Morrison, Taylor, Syringa and Chaffee Halls, said his main responsibilities are planning future council meetings and organizing resident events.</p>
-                  <p>“The primary responsibility, actually only responsibility, is just making the next event,” Almanza said.</p>
-                  <p>While planning events may be the main responsibility, it is not the only way hall councils help students.</p>
-                  <p>Szlachtowski said hall councils were a driving force behind installing water bottle refill stations in residence halls across campus.</p>
-                  <p>“Those weren’t a thing originally in the residence halls, and so all councils across Boise State saw a need for that in the buildings,” Szlachtowski said. “And that made [its] way up into making a change happen in each one of the residence halls, which was getting us those water filter stations added.”</p>
-                  <p>Almanza, a sophomore transfer student from the University of Idaho, comes from a background of leadership, but said stepping into a role like hall council president was new for him.</p>
-                  <p>“I’ve loved the prospect of leadership. I was a part of football teams, wrestling teams in middle school. I’ve always done things like that,” Almanza said. “But as far as officially overseeing, this would be my first college-based thing.”</p>
-                  <p>One of Almanza’s goals as president is finding a balance between safety and fun for students.</p>
-                  <p>“Goal number one is always always to make sure everyone feels safe, and that isn’t just physical safety – it’s emotional safety, it’s academic safety,” Almanza said. “We’re all adults now, but that doesn’t mean that we can’t keep that priority of fun and safety.”</p>
-                  <p>Almanza also said making all students feel involved is very important.</p>
-                  <p>“You always want to ensure that you can make a very welcoming environment for everyone, and make Boise State Hall Council a good community because that’s what we’re all about,” Almanza said. “Bringing people together through these events, through these parties, and having a good time all day.”</p>
-                  <p class="source">
-                    First published in The Arbiter on Nov. 12, 2026.
-                    <a href="https://www.arbiteronline.com/2026/11/12/hall-councils-serve-students-behind-the-scenes/" target="_blank" rel="noopener">Read the original <span aria-hidden="true">↗</span></a>
-                  </p>
-                  <button type="button" class="full-done" data-close="s11">Close the story</button>
-                </div>
-              </details>
             </li>
 
             <li class="story" id="s10" data-section="news">
@@ -1244,7 +157,7 @@
                 <div class="story-img">
                   <img
                     src="https://i0.wp.com/www.arbiteronline.com/wp-content/uploads/2026/11/Project-TRAILBoise-State-University-Arbiter-Online.jpg?w=900&amp;ssl=1"
-                    alt="Project TRAIL at Boise State's College of Education"
+                    alt="Project TRAIL at Boise State’s College of Education"
                     loading="lazy"
                     onerror="this.parentNode.classList.add('broken')"
                   />
@@ -1257,52 +170,9 @@
                   <time datetime="2026-11-11">Nov. 11, 2026</time>
                   <span class="words">561 words</span>
                 </p>
-                <h3>
-                  <a href="#s10" data-open="s10">$8 million dollar federal grant addresses Idaho teacher shortage</a>
-                </h3>
-                <p class="dek">
-                  Boise State University's College of Education is using an $8 million federal
-                  grant to offer paid, full-time teaching positions and help new teachers stay in
-                  Idaho schools.
-                </p>
-                <a class="cta" href="https://www.arbiteronline.com/2026/11/11/8-million-dollar-federal-grant-addresses-idaho-teacher-shortage/" target="_blank" rel="noopener"
-                  >Original on The Arbiter <span aria-hidden="true">↗</span></a
-                >
+                <h3><a href="stories/8-million-dollar-federal-grant-addresses-idaho-teacher-shortage/">$8 million dollar federal grant addresses Idaho teacher shortage</a></h3>
+                <p class="dek">Boise State University’s College of Education is using an $8 million federal grant to offer paid, full-time teaching positions and help new teachers stay in Idaho schools.</p>
               </div>
-              <details class="full">
-                <summary>
-                  <span class="full-open">Read the full story</span>
-                  <span class="full-close">Close the story</span>
-                  <span class="words">561 words</span>
-                </summary>
-                <div class="article">
-                  <p class="byline">By Jack McElwee · The Arbiter · Nov. 11, 2026</p>
-                  <p>Boise State University’s College of Education is using an $8 million federal grant to offer paid, full-time teaching positions and help new teachers stay in Idaho schools.</p>
-                  <p>The university received the Teacher Quality Partnership grant from the U.S. Department of Education to fund Project TRAIL (Teacher Residency Academy for Induction and Leadership).</p>
-                  <p>“One of the exciting outcomes of the grant is that we’ll be working with nine rural districts to be able to place student teachers… in those districts after they graduate,” said Dr. Hannah Carter, principal investigator of Project TRAIL.</p>
-                  <p>Parma, Kuna and Caldwell are among the participating districts and they will hire graduates of Project TRAIL.</p>
-                  <p>To be considered for the initiative, student teachers must first be accepted into either the elementary, second education or special education master’s programs in the College of Education.</p>
-                  <p>Once accepted, the students must submit written and video essays to find out if they have a disposition that lends itself to teaching.</p>
-                  <p>“It’s really important in teaching to have a reflective inquiry mindset and curiosity, wanting to be coached and wanting to learn,” said Dr. Megan Lynch, the project’s co-principal investigator. “We’re also looking at a few characteristics like (if they are) from the area.”</p>
-                  <p>Student teachers typically complete a “professional year” in the final year of their master’s program. Project TRAIL will turn this usually unpaid year into a paid, full-time residency in local schools.</p>
-                  <p>The project will then help transition teachers from the professional year, into a formal teaching position.</p>
-                  <p>“If you are from the Kuna School District and that’s where you want to return to those students, that’s going to weigh heavier on that overall application,” Lynch siad.</p>
-                  <p>A key goal of the initiative is to give new teachers what Lynch calls “induction support” after graduation.</p>
-                  <p>“We call those first few years of teaching between year one to year five as your induction into teaching,” Lynch said. “If you’re left on your own, the research shows you have a greater chance of being burnt out, not having support and leaving the teaching profession.”</p>
-                  <p>Induction support reduces burnout by providing a cohort where new teachers can come together to discuss challenges they face early in their careers. They will also have opportunities to take graduate courses in areas they want to explore further.</p>
-                  <p>“The grant will provide the stipends for graduate courses that they can take together to continue to develop in those first few years of teaching,” Lynch said.</p>
-                  <p>In the three years Project TRAIL will run 75 teachers through the program in the resident, early-career as well as the mentor and teacher leader categories.</p>
-                  <p>Every year in Idaho, around 2,000 teaching vacancies must be filled, according to a <a href="https://boardofed.idaho.gov/office-of-state-board/k-12-resources/educator-effectiveness/" target="_blank" rel="noopener">2023 report</a> from the Idaho State Board of Education. Lynch hopes the more experienced graduating teachers will foster a culture in their schools that encourages more teachers to stay.</p>
-                  <p>“You don’t need to replace 2,000 teachers if they’re not leaving,” Lynch said.</p>
-                  <p>Lynch said the initiative gives the College of Education time to conduct classroom research and identify ways to better support teachers.</p>
-                  <p>“Part of this project is going to help us at the university get better at partnering with schools and partnering with teachers to identify what are the needs of first-year teachers,” Lynch said. “We’re preparing them based on what we know from scholarship, and what we know from experience.”</p>
-                  <p class="source">
-                    First published in The Arbiter on Nov. 11, 2026.
-                    <a href="https://www.arbiteronline.com/2026/11/11/8-million-dollar-federal-grant-addresses-idaho-teacher-shortage/" target="_blank" rel="noopener">Read the original <span aria-hidden="true">↗</span></a>
-                  </p>
-                  <button type="button" class="full-done" data-close="s10">Close the story</button>
-                </div>
-              </details>
             </li>
 
             <li class="story" id="s09" data-section="culture">
@@ -1324,44 +194,9 @@
                   <time datetime="2026-10-28">Oct. 28, 2026</time>
                   <span class="words">321 words</span>
                 </p>
-                <h3>
-                  <a href="#s09" data-open="s09">Communication Building leans into Idaho History for 2026 Haunted House</a>
-                </h3>
-                <p class="dek">
-                  The haunted house is back at Boise State's Communication Building, put on by
-                  students from the Communications and Media Departments.
-                </p>
-                <a class="cta" href="https://www.arbiteronline.com/2026/10/28/communication-building-leans-into-idaho-history-for-2026-haunted-house/" target="_blank" rel="noopener"
-                  >Original on The Arbiter <span aria-hidden="true">↗</span></a
-                >
+                <h3><a href="stories/communication-building-leans-into-idaho-history-for-2026-haunted-house/">Communication Building leans into Idaho History for 2026 Haunted House</a></h3>
+                <p class="dek">The haunted house is back at Boise State’s Communication Building, put on by students from the Communications and Media Departments.</p>
               </div>
-              <details class="full">
-                <summary>
-                  <span class="full-open">Read the full story</span>
-                  <span class="full-close">Close the story</span>
-                  <span class="words">321 words</span>
-                </summary>
-                <div class="article">
-                  <p class="byline">By Jack McElwee · The Arbiter · Oct. 28, 2026</p>
-                  <p>The haunted house is back at Boise State’s Communication Building.</p>
-                  <p>The event is a collaborative effort between students from the Communications and Media Departments and is led by Dr. Sarah Silverman and Nathan Snyder.</p>
-                  <p>This year’s haunted house will be themed around a historic – and haunted – Idaho mining town.</p>
-                  <p>“We’re focusing on Silver City, which is a haunted ghost town in Idaho,” Silverman said. “So [the communications students] have gone out and gathered stories, and they’re going to take those stories and recreate them in the building. And then [media students are] going to help us bring it all to life with sound and lights and all the technology side of things.”</p>
-                  <p>This is the second year the Communication Building has hosted a haunted house. Silverman described last year’s rendition as an “amalgamation of different haunted places around Boise.”</p>
-                  <p>Dinah, the ghost that lives in the building according to campus urban legend, served as the tour guide for last year’s haunted house.</p>
-                  <p>When asked if Dinah would be incorporated into the tour this year, Silverman was noncommittal, but did say she thinks Dinah “will make an appearance.”</p>
-                  <p>Although it is a university production, the haunted house will feature elements similar to traditional haunted houses. There will be jump scares, actors, light and sound and fog machines, according to Silverman.</p>
-                  <p>“I would say at least PG-13,” Silverman said when asked how “scary” the haunted house would be.</p>
-                  <p>Admission is completely free, however, Silverman said the departments are accepting donations. Last year’s event drew around 300 people, and she anticipates a similar number this year.</p>
-                  <p>“I would encourage people to come,” Silverman said. “It’s a novelty and such a cool thing that we get to do this on our campus. And in order for things like this to continue happening on our campus, we have to show support.”</p>
-                  <p>The Haunted House will take place from 7-10 p.m. on Friday, Oct. 30.</p>
-                  <p class="source">
-                    First published in The Arbiter on Oct. 28, 2026.
-                    <a href="https://www.arbiteronline.com/2026/10/28/communication-building-leans-into-idaho-history-for-2026-haunted-house/" target="_blank" rel="noopener">Read the original <span aria-hidden="true">↗</span></a>
-                  </p>
-                  <button type="button" class="full-done" data-close="s09">Close the story</button>
-                </div>
-              </details>
             </li>
 
             <li class="story" id="s08" data-section="news">
@@ -1383,47 +218,9 @@
                   <time datetime="2026-10-27">Oct. 27, 2026</time>
                   <span class="words">443 words</span>
                 </p>
-                <h3>
-                  <a href="#s08" data-open="s08">Student ideas take shape halfway through the Social Impact Challenge</a>
-                </h3>
-                <p class="dek">
-                  Halfway through Boise State's Social Impact Challenge, students are refining their
-                  projects ahead of the final pitch meeting, with up to $3,000 going to the winning
-                  project.
-                </p>
-                <a class="cta" href="https://www.arbiteronline.com/2026/10/27/student-ideas-take-shape-halfway-through-social-impact-challenge/" target="_blank" rel="noopener"
-                  >Original on The Arbiter <span aria-hidden="true">↗</span></a
-                >
+                <h3><a href="stories/student-ideas-take-shape-halfway-through-social-impact-challenge/">Student ideas take shape halfway through the Social Impact Challenge</a></h3>
+                <p class="dek">Halfway through Boise State’s Social Impact Challenge, students are refining their projects ahead of the final pitch meeting, with up to $3,000 going to the winning project.</p>
               </div>
-              <details class="full">
-                <summary>
-                  <span class="full-open">Read the full story</span>
-                  <span class="full-close">Close the story</span>
-                  <span class="words">443 words</span>
-                </summary>
-                <div class="article">
-                  <p class="byline">By Jack McElwee · The Arbiter · Oct. 27, 2026</p>
-                  <p>Halfway through Boise State’s Social Impact Challenge, students are refining their projects ahead of the final pitch meeting on Nov. 6.</p>
-                  <p><a href="https://www.arbiteronline.com/2026/10/02/boise-state-students-tackle-real-world-problems-through-2026-social-impact-challenge/" target="_blank" rel="noopener">As previously reported by The Arbiter</a>, the Social Impact Challenge encourages students to explore ideas addressing community problems, with the winning project receiving up to $3,000 in prize money.</p>
-                  <p>“It’s going quite well,” said Mike Stefancic, director of student success for the public service unit. “Students are really excited and they’re motivated to do these types of projects, and that’s really what the Social Impact Challenge is about – just giving them space and some support to take their ideas and incentivize them to do that.”</p>
-                  <p>Students are beginning to formulate their ideas while preparing their presentations for the final pitch.</p>
-                  <p>Senior Charlotte McNeely is working on a plan to raise awareness and support legislation that would ban anonymous social media apps such as Yik Yak from being used on school Wi-Fi.</p>
-                  <p>Although she graduates in May, McNeely hopes her project helps prevent people from becoming desensitized to rude behavior online.</p>
-                  <p>“I think that as social media and the use of technology and AI become so much more relevant in our today’s society, that people don’t necessarily always think about, ‘oh, there’s a human on the other side of my comment,’ and it hurts people,” McNeely said.” And just trying to change that mentality from thinking that it’s okay to be nasty online, kind of thing.”</p>
-                  <p>Freshman Chloe Mann is also narrowing down her focus for the project. She hopes to create an app that connects people with nonprofit food banks.</p>
-                  <p>“I’m really focusing on the shame that comes with it,” Mann said. “One of my ideas was to do an app where people could post anonymously about their struggles without feeling embarrassed about it.”</p>
-                  <p>Mann said she would need to outsource the app-building portion of her project if she wins the competition, as she does not have a background in software development.</p>
-                  <p>While students can receive academic credit for participating in the challenge, that is not the only benefit.</p>
-                  <p>“I’ve heard that from numerous other students, whether they took their idea on or not, they use this experience in job interviews, on their resume, and things like that, and had directly received feedback from employers that that stood out to them too as well,” Stefancic said.</p>
-                  <p>Stefancic hopes the students find future success through the opportunities this project opens for them.</p>
-                  <p>“I think the biggest goal is that this becomes a beginning for them,” Stefancic said. “ I want to see their ideas continue on, whether that is the [project] itself or a version of that that kind of moves on.”</p>
-                  <p class="source">
-                    First published in The Arbiter on Oct. 27, 2026.
-                    <a href="https://www.arbiteronline.com/2026/10/27/student-ideas-take-shape-halfway-through-social-impact-challenge/" target="_blank" rel="noopener">Read the original <span aria-hidden="true">↗</span></a>
-                  </p>
-                  <button type="button" class="full-done" data-close="s08">Close the story</button>
-                </div>
-              </details>
             </li>
 
             <li class="story" id="s07" data-section="news">
@@ -1432,7 +229,7 @@
                 <div class="story-img">
                   <img
                     src="https://i0.wp.com/www.arbiteronline.com/wp-content/uploads/2026/10/BoiseWater-MakenaWalker-10-26-V1.jpg?w=900&amp;ssl=1"
-                    alt="Graphic showing Boise's drinking water grade"
+                    alt="Graphic showing Boise’s drinking water grade"
                     loading="lazy"
                     onerror="this.parentNode.classList.add('broken')"
                   />
@@ -1445,49 +242,9 @@
                   <time datetime="2026-10-02">Oct. 2, 2026</time>
                   <span class="words">471 words</span>
                 </p>
-                <h3>
-                  <a href="#s07" data-open="s07">Boise receives highest grade for drinking water purity among college towns</a>
-                </h3>
-                <p class="dek">
-                  A national survey of college towns in all 50 states graded drinking water from A
-                  through F. Boise was one of four cities to receive an A+.
-                </p>
-                <a class="cta" href="https://www.arbiteronline.com/2026/10/02/boise-receives-highest-grade-for-drinking-water-purity-among-college-towns/" target="_blank" rel="noopener"
-                  >Original on The Arbiter <span aria-hidden="true">↗</span></a
-                >
+                <h3><a href="stories/boise-receives-highest-grade-for-drinking-water-purity-among-college-towns/">Boise receives highest grade for drinking water purity among college towns</a></h3>
+                <p class="dek">A national survey of college towns in all 50 states graded drinking water from A through F. Boise was one of four cities to receive an A+.</p>
               </div>
-              <details class="full">
-                <summary>
-                  <span class="full-open">Read the full story</span>
-                  <span class="full-close">Close the story</span>
-                  <span class="words">471 words</span>
-                </summary>
-                <div class="article">
-                  <p class="byline">By Jack McElwee · The Arbiter · Oct. 2, 2026</p>
-                  <p>Boise is home to the cleanest water out of college towns by a <a href="https://shop.culligan.com/pages/college-water" target="_blank" rel="noopener">national survey</a>.</p>
-                  <p>Culligan Water conducted the survey, and analyzed publicly available water quality data from college towns in all fifty states. The cities were graded on an A through F scale, with Boise being one of four cities to receive an A+.</p>
-                  <p>Albuquerque, New Mexico, Blacksburg, Virginia, and Durham, New Hampshire were the only other cities to receive the survey’s highest score. The scores were based off the amounts of lead and forever chemicals found in the water.</p>
-                  <p>Boise’s drinking water is largely provided by the private company, Veolia, rather than directly from the city. Other major cities such as Chicago, New York and Los Angeles all receive their water from the city.</p>
-                  <p>Veolia provides drinking water throughout the Boise area and operates several treatment facilities across Boise, Eagle and Meridian.</p>
-                  <p>Madeline Wyatt, Veolia’s communications, community relations and conservation manager, attributed Boise’s high letter grade to the naturally pure water of the Boise River.</p>
-                  <p>“In this section of the river, we’re very fortunate to have really good water quality throughout the year,” Wyatt said. “That really helps the treatability through this plant.”</p>
-                  <p>About 30% of Boise’s drinking water comes from the Boise River, while the other 70% comes from wells.</p>
-                  <p>When water enters Veolia’s plant, it undergoes several stages of treatment to ensure the water is rid of contaminants, sediment, and harmful parasites.</p>
-                  <p>The water first travels through a filtration system that removes leaves and other debris. Afterwards it continues through the plant, passing through a large tank filled with grains of a material called anthracite to remove any sediment. Finally, a small dose of chlorine is injected to kill any germs or bacteria that may have survived the process.</p>
-                  <p>Veolia Production Supervisor Mark Chiaramonte said adding a small dose of chlorine is necessary.</p>
-                  <p>“It’s a requirement by the EPA to disinfect the water prior to human consumption,” Chiaramonte said. “It’s our job to ensure that this water is safe to drink, safe to do whatever you want to once it’s delivered to the system.”</p>
-                  <p>Chiaramonte said filtration helps kill cryptosporidium and giardia which are bacteria potentially fatal to infants and the elderly.</p>
-                  <p>In the winter months, Veolia delivers 20 million to 25 million gallons of water per day, but that number balloons to 95 million gallons per day during the summer.</p>
-                  <p>Wyatt encouraged Boise residents to be aware of their water usage, especially during the hotter months of the year.</p>
-                  <p>“We just encourage, as people are consuming it, to be deliberate about who you’re consuming,” Wyatt said. “We live in the high desert environment. We need to be really mindful of how much we use and how we use it.”</p>
-                  <p>From river to faucets, the processes the water goes through all contribute to Boise’s A+ water ranking.</p>
-                  <p class="source">
-                    First published in The Arbiter on Oct. 2, 2026.
-                    <a href="https://www.arbiteronline.com/2026/10/02/boise-receives-highest-grade-for-drinking-water-purity-among-college-towns/" target="_blank" rel="noopener">Read the original <span aria-hidden="true">↗</span></a>
-                  </p>
-                  <button type="button" class="full-done" data-close="s07">Close the story</button>
-                </div>
-              </details>
             </li>
 
             <li class="story" id="s06" data-section="news">
@@ -1509,45 +266,10 @@
                   <time datetime="2026-09-23">Sept. 23, 2026</time>
                   <span class="words">394 words</span>
                 </p>
-                <h3>
-                  <a href="#s06" data-open="s06">Engineering Building flood displaces students and classes</a>
-                </h3>
-                <p class="dek">
-                  The Charles P. Ruch Engineering Building suffered a flood over Labor Day weekend,
-                  displacing dozens of students and moving classes and research labs to other
-                  buildings on campus.
-                </p>
+                <h3><a href="stories/engineering-building-flood-displaces-students-and-classes/">Engineering Building flood displaces students and classes</a></h3>
+                <p class="dek">The Charles P. Ruch Engineering Building suffered a flood over Labor Day weekend, displacing dozens of students and moving classes and research labs to other buildings on campus.</p>
                 <p class="with">Co-reported with Sofia Davis</p>
-                <a class="cta" href="https://www.arbiteronline.com/2026/09/23/engineering-building-flood-displaces-students-and-classes/" target="_blank" rel="noopener"
-                  >Original on The Arbiter <span aria-hidden="true">↗</span></a
-                >
               </div>
-              <details class="full">
-                <summary>
-                  <span class="full-open">Read the full story</span>
-                  <span class="full-close">Close the story</span>
-                  <span class="words">394 words</span>
-                </summary>
-                <div class="article">
-                  <p class="byline">By Sofia Davis and Jack McElwee · The Arbiter · Sept. 23, 2026</p>
-                  <p>The Charles P. Ruch Engineering Building suffered a flood over Labor Day weekend, displacing dozens of students.</p>
-                  <p>Classes and research labs are being temporarily relocated to other buildings on campus while the university addresses the damage.</p>
-                  <p>The flood originated from a third-floor conference room, where a sink leak in a conference room went unnoticed over the weekend, according to building staff. The west side of the building is missing trim and ceiling tiles, and personal items have been removed or placed in boxes. Fans are being used to dry the carpet, while tubes are draining standing water into trash cans.</p>
-                  <p>Sophomore Ana Alvarez said her class was moved out of the Ruch Building into a space far less conducive to learning.</p>
-                  <p>“We got moved from one of the lecture halls in the Ruch to the Spec [Special Events Center] in the Student Union Building,” Alvarez said. “It’s kind of awkward with spacing. Our professor doesn’t have a whiteboard, and he would always write on the whiteboard.”</p>
-                  <p>She explains the Special Events Center isn’t set up as a lecture hall, leaving students without desks or tables for their laptops or outlets to charge their devices.</p>
-                  <p>“It’s really hard to kind of keep that classroom dynamic going,” Alvarez said.</p>
-                  <p>The flood has not put the entire building out of commission. Most first-floor classes have been relocated to other buildings, while most classes on the upper floors remain active, despite the leak seemingly coming from the third floor.</p>
-                  <p>Senior Reece Hackett says he received two emails over the Labor Day weekend, one from the university and one from his professor, notifying him that his class has been relocated to the Education Building. Though the professor is now offering students to join the class virtually, the move is still quite challenging.</p>
-                  <p>“He’s having an issue with class participation now, because a lot of people aren’t even showing up to the zoom,” Hackett said, “The people who do attend in person have to rush over to the other side of campus because all of our other classes are in the engineering buildings, which are all grouped together on the east side of campus.”</p>
-                  <p>While the cause and full extent of the damage are still unknown according to the office of communications and marketing, an email sent to students states the building is expected to resume operations within two weeks.</p>
-                  <p class="source">
-                    First published in The Arbiter on Sept. 23, 2026.
-                    <a href="https://www.arbiteronline.com/2026/09/23/engineering-building-flood-displaces-students-and-classes/" target="_blank" rel="noopener">Read the original <span aria-hidden="true">↗</span></a>
-                  </p>
-                  <button type="button" class="full-done" data-close="s06">Close the story</button>
-                </div>
-              </details>
             </li>
 
             <li class="story" id="s05" data-section="news">
@@ -1569,47 +291,9 @@
                   <time datetime="2026-09-17">Sept. 17, 2026</time>
                   <span class="words">400 words</span>
                 </p>
-                <h3>
-                  <a href="#s05" data-open="s05">Communication Building renovations add to decades of campus history</a>
-                </h3>
-                <p class="dek">
-                  Built in 1942, the Communication Building remains one of Boise State's oldest
-                  reminders of its early years, and has served as the Student Union Building, the theater
-                  department and a storage building along the way.
-                </p>
-                <a class="cta" href="https://www.arbiteronline.com/2026/09/17/communication-building-renovations-add-to-decades-of-campus-history/" target="_blank" rel="noopener"
-                  >Original on The Arbiter <span aria-hidden="true">↗</span></a
-                >
+                <h3><a href="stories/communication-building-renovations-add-to-decades-of-campus-history/">Communication Building renovations add to decades of campus history</a></h3>
+                <p class="dek">Built in 1942, the Communication Building remains one of Boise State’s oldest reminders of its early years, and has served as the Student Union Building, the theater department and a storage building along the way.</p>
               </div>
-              <details class="full">
-                <summary>
-                  <span class="full-open">Read the full story</span>
-                  <span class="full-close">Close the story</span>
-                  <span class="words">400 words</span>
-                </summary>
-                <div class="article">
-                  <p class="byline">By Jack McElwee · The Arbiter · Sept. 17, 2026</p>
-                  <p>Built in 1942, the Communication Building remains one of Boise State’s oldest reminders of its early years.</p>
-                  <p>After operating as the Student Union Building, theater department and a storage building, the space has found its current life as the hub for the communication and media departments.</p>
-                  <p>The building recently became a part of the other various construction projects popping up around campus.</p>
-                  <p>Despite the visible construction, the project primarily focuses on exterior repairs aiming to limit moisture intrusion on the building and “includes work on the brick, mortar and siding, as well as some window replacements,” according to Janelle Smith, executive assistant of Campus Operations.</p>
-                  <p>The project is expected to be done in mid-October, and while it may look slightly different afterwards, the 80-year-old building is no stranger to facelifts.</p>
-                  <p>Built with support from the Works Project Administration, the building cost $28,000 and was originally designed to be a hub for Boise Junior College students. A 1942 Boise Junior College catalog describes the building as “on a convenient part of the campus” receiving support from the student body and the board of trustees as the “means of pleasant associations for students while not in classes.”</p>
-                  <p>“They saw this real need to have this student gathering space,” said Emily Fritchman-Mahaney, a lecturer in Boise State’s History Department. “It was really the place to be at the time.”</p>
-                  <p>In 1951, the building underwent its first major expansion, nearly doubling its space and adding a second-floor ballroom. An ornamental carving above the French doors at the north entrance still displays the date 1951.</p>
-                  <p>By 1965, Boise Junior College became a four-year institution and quickly outgrew this version of the Student Union Building.</p>
-                  <p>To meet growing demand for student recreation spaces, Boise State constructed the current Student Union Building with the former being repurposed as the “Music-Drama Building” and became known as the Subal building.</p>
-                  <p>For the next 15 years, the building largely went unused until a massive 1984 interior renovation created classrooms and offices, turning the building into what it is today.</p>
-                  <p>The building opened Jan. 23, 1985, according to previous reporting by The Arbiter, and held an open house allowing students and faculty to tour the new space.</p>
-                  <p>After the 1985 renovation, the building was renamed the Communication Building and now houses Boise State’s Department of Communication and Media.</p>
-                  <p>The current exterior renovations are another chapter in the historic building’s ever-changing history.</p>
-                  <p class="source">
-                    First published in The Arbiter on Sept. 17, 2026.
-                    <a href="https://www.arbiteronline.com/2026/09/17/communication-building-renovations-add-to-decades-of-campus-history/" target="_blank" rel="noopener">Read the original <span aria-hidden="true">↗</span></a>
-                  </p>
-                  <button type="button" class="full-done" data-close="s05">Close the story</button>
-                </div>
-              </details>
             </li>
 
             <li class="story" id="s04" data-section="news">
@@ -1631,44 +315,9 @@
                   <time datetime="2026-08-31">Aug. 31, 2026</time>
                   <span class="words">427 words</span>
                 </p>
-                <h3>
-                  <a href="#s04" data-open="s04">Greenbelt incidents spark conversation about campus safety</a>
-                </h3>
-                <p class="dek">
-                  After a homicide and an attack near the Greenbelt in early July, the Department of
-                  Public Safety is pointing students to the resources available to them.
-                </p>
-                <a class="cta" href="https://www.arbiteronline.com/2026/08/31/greenbelt-incidents-spark-conversation-about-campus-safety/" target="_blank" rel="noopener"
-                  >Original on The Arbiter <span aria-hidden="true">↗</span></a
-                >
+                <h3><a href="stories/greenbelt-incidents-spark-conversation-about-campus-safety/">Greenbelt incidents spark conversation about campus safety</a></h3>
+                <p class="dek">After a homicide and an attack near the Greenbelt in early July, the Department of Public Safety is pointing students to the resources available to them.</p>
               </div>
-              <details class="full">
-                <summary>
-                  <span class="full-open">Read the full story</span>
-                  <span class="full-close">Close the story</span>
-                  <span class="words">427 words</span>
-                </summary>
-                <div class="article">
-                  <p class="byline">By Jack McElwee · The Arbiter · Aug. 31, 2026</p>
-                  <p>The Department of Public Safety is emphasizing the importance of resources available to students after Boise Police responded to a <a href="https://www.idahostatesman.com/news/local/crime/article316523436.html" target="_blank" rel="noopener">homicide</a> near 11th Street and Pioneer Parkway and a woman was <a href="https://www.kivitv.com/news/local-news/in-your-neighborhood/ada-county/boise-police-arrest-suspect-in-connection-with-aggravated-assault-on-greenbelt" target="_blank" rel="noopener">attacked</a> near S. Ferguson Street in early July.</p>
-                  <p>These crimes were jarring to the Boise community, however Lt. Chris Davis with Boise Police stressed Boise is “still very safe. “</p>
-                  <p>“The state of Idaho and the city of Boise are extremely safe compared to the rest of the United States,” Davis said. “The city of Boise is very safe within the state of Idaho. Idaho has a very low crime rate [and] the city of Boise has a very low crime rate.”</p>
-                  <p>Junior mechanical engineering student Granite Stephens agreed too. “I feel pretty safe on the Greenbelt,” Stephens said. “I have not had any bad experiences.”</p>
-                  <p>Neither crime took place on campus and the Greenbelt is considered safe according to both Boise State officials and Boise Police. The safety of the Greenbelt on campus is bolstered with blue light phones, lights and security cameras.</p>
-                  <p>“We do have a fairly safe stretch of greenbelt,” said Tana Monroe, associate vice president of the Department of Public Safety. “It’s well lit. It has the blue light phones where people can push the buttons and get a hold of 911 dispatch and our security officers, our public safety office.”</p>
-                  <p>Boise State also utilizes a mobile app called <a href="https://www.boisestate.edu/publicsafety-security/home/rave-guardian/" target="_blank" rel="noopener">Rave Guardian</a>, allowing users to contact emergency services and communicate with university dispatchers. The app essentially acts as a direct hotline to campus security or police.</p>
-                  <p>“So what you can do is you can text our dispatchers, you can immediately call 911,” said Monroe. “It also at that time sends the GPS coordinates of where the phone is, and so we can call the person and then immediately dispatch police and security to their location.”</p>
-                  <p>The app also contains a safety timer function for additional security. The timer can be set for any length of time and if not deactivated, will automatically alert either a set emergency contact, or campus security.</p>
-                  <p>Lt. Davis also encouraged students to have access to the app.</p>
-                  <p>“Everybody on campus should download Rave Guardian and have it on their phone,” Davis said. “There’s a ton of different resources on there.”</p>
-                  <p>As for what students can do to keep safe, both Monroe and Lt. Davis emphasized staying aware of your surroundings as a key way to stay safe. They both recommended removing earbuds or any distractions and for students to be aware of their surroundings when using the Greenbelt.</p>
-                  <p class="source">
-                    First published in The Arbiter on Aug. 31, 2026.
-                    <a href="https://www.arbiteronline.com/2026/08/31/greenbelt-incidents-spark-conversation-about-campus-safety/" target="_blank" rel="noopener">Read the original <span aria-hidden="true">↗</span></a>
-                  </p>
-                  <button type="button" class="full-done" data-close="s04">Close the story</button>
-                </div>
-              </details>
             </li>
 
             <li class="story" id="s03" data-section="news">
@@ -1677,14 +326,12 @@
                 <div class="story-img">
                   <img
                     src="https://i0.wp.com/www.arbiteronline.com/wp-content/uploads/2026/04/IFC-Via-The-Association-of-Fraternal-Leadership-and-Values-West-ONLINE-.jpg?w=900&amp;ssl=1"
-                    alt="Boise State's Interfraternity Council at the national conference"
+                    alt="Boise State’s Interfraternity Council at the national conference"
                     loading="lazy"
                     onerror="this.parentNode.classList.add('broken')"
                   />
                 </div>
-                <figcaption class="credit">
-                  Photo: Association of Fraternal Leadership and Values West
-                </figcaption>
+                <figcaption class="credit">Photo: Association of Fraternal Leadership and Values West</figcaption>
               </figure>
               <div class="story-body">
                 <p class="meta">
@@ -1692,51 +339,9 @@
                   <time datetime="2026-04-23">April 23, 2026</time>
                   <span class="words">530 words</span>
                 </p>
-                <h3>
-                  <a href="#s03" data-open="s03">Interfraternity Council wins big at national conference</a>
-                </h3>
-                <p class="dek">
-                  Boise State's Interfraternity Council took home several national awards at a
-                  conference in Anaheim, California, including Council Compass Awards for
-                  collaboration, innovation and education.
-                </p>
-                <a class="cta" href="https://www.arbiteronline.com/2026/04/23/interfraternity-council-wins-big-at-national-conference/" target="_blank" rel="noopener"
-                  >Original on The Arbiter <span aria-hidden="true">↗</span></a
-                >
+                <h3><a href="stories/interfraternity-council-wins-big-at-national-conference/">Interfraternity Council wins big at national conference</a></h3>
+                <p class="dek">Boise State’s Interfraternity Council took home several national awards at a conference in Anaheim, California, including Council Compass Awards for collaboration, innovation and education.</p>
               </div>
-              <details class="full">
-                <summary>
-                  <span class="full-open">Read the full story</span>
-                  <span class="full-close">Close the story</span>
-                  <span class="words">530 words</span>
-                </summary>
-                <div class="article">
-                  <p class="byline">By Jack McElwee · The Arbiter · April 23, 2026</p>
-                  <p>Boise State’s Interfraternity Council (IFC) is being featured at the national level.</p>
-                  <p>Members of the council recently attended a conference in Anaheim, California, where they took home several prestigious national awards.</p>
-                  <p>The group won Council Compass Awards for Collaboration, Innovation, Education and Accountability, as well as the Dr. Will Keim Change Making Experience Award.</p>
-                  <p>“The stuff that we’re actively doing … is unseen at a national level, no other university is accomplishing it, and no other university is accomplishing these things in the little bit of time that we have,” said Dominic Mancini, president of Boise State’s Interfraternity Council.</p>
-                  <p>Mancini received the Marilyn Fordham Undergraduate Award for his work as IFC’s Chief Justice Officer, the position he held before becoming president. The award is <a href="https://aflv.org/individual-awards" target="_blank" rel="noopener">given to a council member</a> who has made a significant systemic change in their fraternal program.</p>
-                  <p>Boise State’s sudden surge in awards was unexpected, as the school has historically never taken home an award, according to Mancini.</p>
-                  <p>“We basically ran that conference, in a way. Everyone knew Boise State,” Mancini said.</p>
-                  <p>Dustin Fisher, IFC’s Chief Public Relations Officer, also attended the conference, describing the council’s wins as “incredible” for the university.</p>
-                  <p>“It’s really awesome to show a little presence of ‘Blue Turf thinking’ [on a national level],” Fisher said.</p>
-                  <p>This recognition is no coincidence. Before he was elected president, Mancini served as IFC’s Chief Justice Officer and said he pushed that position to the next level.</p>
-                  <p>“Around two years [ago], when I stepped into the role, [previous leadership] did absolutely nothing with it. They just threw it on their LinkedIn,” Mancini said. “I knew that I needed to change that.”</p>
-                  <p>After he stepped into the position, he began setting up meetings with university administrators to ask how he could best hold chapters accountable and improve relationships between IFC, the Dean of Students and local law enforcement.</p>
-                  <p>During his time as Chief Justice Officer, Mancini restructured the judicial process and changed over 200 bylaws while also building a strong relationship with the Dean of Students’ office. This allowed the IFC judicial system to deal with cases that in the past had been taken care of by either local law enforcement or the Dean of Students’ office.</p>
-                  <p>Mancini has spearheaded a push to increase visibility for Greek life on campus, leading to significant growth in Boise State’s chapters, according to Fisher. The growth is so large IFC believes Greek Life is outgrowing the Student Union Building and is looking for alternative meeting places in the future.</p>
-                  <p>“[A Greek Lodge, I call it. It’s a big Greek building for our university that’s designated to Greeks, because trying to rent [a] room in the Student Union Building is impossible,” Mancini said.</p>
-                  <p>The lodge is still in the brainstorming phase, but Mancini hopes it will open in the next five years.</p>
-                  <p>During his time as president, Mancini hopes to tackle men’s mental health, address sexual assault on campus and continue facilitating Greek life’s growth on campus.</p>
-                  <p>“At Boise State University, our Greek life is absolutely blowing up,” Mancini said. “Everyone’s coming here. Everyone wants to be a part of it, and we’re the ones that are setting the precedent for that.”</p>
-                  <p class="source">
-                    First published in The Arbiter on April 23, 2026.
-                    <a href="https://www.arbiteronline.com/2026/04/23/interfraternity-council-wins-big-at-national-conference/" target="_blank" rel="noopener">Read the original <span aria-hidden="true">↗</span></a>
-                  </p>
-                  <button type="button" class="full-done" data-close="s03">Close the story</button>
-                </div>
-              </details>
             </li>
 
             <li class="story" id="s02" data-section="news">
@@ -1758,47 +363,9 @@
                   <time datetime="2026-03-27">March 27, 2026</time>
                   <span class="words">408 words</span>
                 </p>
-                <h3>
-                  <a href="#s02" data-open="s02">Boise State considering renaming of Cesar Chavez Lane</a>
-                </h3>
-                <p class="dek">
-                  One of Boise State's most utilized roadways may soon carry a new name, after the
-                  university told students, faculty and staff it is weighing a change in light of
-                  recent findings.
-                </p>
-                <a class="cta" href="https://www.arbiteronline.com/2026/03/27/boise-state-considering-renaming-of-cesar-chavez-lane/" target="_blank" rel="noopener"
-                  >Original on The Arbiter <span aria-hidden="true">↗</span></a
-                >
+                <h3><a href="stories/boise-state-considering-renaming-of-cesar-chavez-lane/">Boise State considering renaming of Cesar Chavez Lane</a></h3>
+                <p class="dek">One of Boise State’s most utilized roadways may soon carry a new name, after the university told students, faculty and staff it is weighing a change in light of recent findings.</p>
               </div>
-              <details class="full">
-                <summary>
-                  <span class="full-open">Read the full story</span>
-                  <span class="full-close">Close the story</span>
-                  <span class="words">408 words</span>
-                </summary>
-                <div class="article">
-                  <p class="byline">By Jack McElwee · The Arbiter · March 27, 2026</p>
-                  <p>One of Boise State’s most utilized roadways may soon carry a new name.</p>
-                  <p>The school announced in an email sent to faculty, staff and students that the university is considering renaming Cesar Chavez Lane in light of recent findings.</p>
-                  <p>A recent <a href="https://www.nytimes.com/2026/03/18/us/cesar-chavez-sexual-abuse-allegations-ufw.html?searchResultPosition=4" target="_blank" rel="noopener">New York Times report</a> brought allegations of sexual assault and rape against former labor rights activist Cesar Chavez.</p>
-                  <p>Chavez who is among the most venerated figures in the Latino civil rights movement, founded the United Farm Workers of America, the largest farmworkers union in the United States.</p>
-                  <p><a href="https://www.nytimes.com/2026/03/18/us/cesar-chavez-sexual-abuse-allegations-ufw.html" target="_blank" rel="noopener">According to the report from the Times</a>, Ana Murguia and Debra Rojas said they were sexually abused by Chavez repeatedly between 1972 and 1977. Both women were minors at the time.</p>
-                  <p>The findings quickly sparked an outcry as entities nationwide have moved to scrub Chavez’s name from notable infrastructure. <a href="https://www.latimes.com/california/story/2026-03-24/lausd-cesar-chavez-remove-school-names-murals" target="_blank" rel="noopener">In Los Angeles</a>, two schools bearing Chavez’s name are already in the process of being renamed. Additionally, the state of California <a href="https://www.politico.com/news/2026/03/26/newsom-signs-law-renaming-cesar-chavez-day-to-farmworkers-day-00847474" target="_blank" rel="noopener">renamed Cesar Chavez Day to Farmworkers Day</a>, ahead of the March 31 holiday.</p>
-                  <p>Back home, Boise State officials are evaluating a potential name change of the school’s Cesar Chavez Lane.</p>
-                  <p>“In response to these allegations, university leadership will seek input from the campus community regarding a potential name change for this campus road,” the university said in a press release.</p>
-                  <p>Cesar Chavez Lane was formerly called Campus Lane until a student-led campaign in 2006 pushed for its renaming after Chavez.</p>
-                  <p>This campaign was partially born out of the 2004 renaming of The Pavilion to Taco Bell Arena (now Extra Mile Arena). At the time, Taco Bell faced scrutiny over its lack of response to a tomato worker’s strike in Florida.</p>
-                  <p>As <a href="https://www.arbiteronline.com/2022/09/01/the-forgotten-history-of-cesar-chavez-lane/" target="_blank" rel="noopener">previously reported</a> by The Arbiter on March 6, 2006, Boise State applied for Campus Lane to rename Cesar Chavez Lane. That same day, Laurence Blake, BSU’s planning director at the time, sent an email to the City of Boise requesting the name change to be approved.</p>
-                  <p>While other entities across the country have moved quickly to rename roads and schools, Boise State said the name change could take some time.</p>
-                  <p>“If a name change is pursued, the university will follow Ada County and the City of Boise’s formal process, which could take a few months,” the university said in a press release.</p>
-                  <p>The university said further information and updates will be shared in the coming weeks as feedback is collected from faculty, staff and student government via a survey.</p>
-                  <p class="source">
-                    First published in The Arbiter on March 27, 2026.
-                    <a href="https://www.arbiteronline.com/2026/03/27/boise-state-considering-renaming-of-cesar-chavez-lane/" target="_blank" rel="noopener">Read the original <span aria-hidden="true">↗</span></a>
-                  </p>
-                  <button type="button" class="full-done" data-close="s02">Close the story</button>
-                </div>
-              </details>
             </li>
 
             <li class="story" id="s01" data-section="news">
@@ -1820,53 +387,9 @@
                   <time datetime="2026-02-18">Feb. 18, 2026</time>
                   <span class="words">689 words</span>
                 </p>
-                <h3>
-                  <a href="#s01" data-open="s01">Ski resorts combat record-low snowfall, meteorologist weighs in</a>
-                </h3>
-                <p class="dek">
-                  Boise has just received 3% of its average snowfall amid a historic snow drought
-                  plaguing the West.
-                </p>
-                <a class="cta" href="https://www.arbiteronline.com/2026/02/18/ski-resorts-combat-record-low-snowfall-meteorologist-weighs-in/" target="_blank" rel="noopener"
-                  >Original on The Arbiter <span aria-hidden="true">↗</span></a
-                >
+                <h3><a href="stories/ski-resorts-combat-record-low-snowfall-meteorologist-weighs-in/">Ski resorts combat record-low snowfall, meteorologist weighs in</a></h3>
+                <p class="dek">Boise has just received 3% of its average snowfall amid a historic snow drought plaguing the West.</p>
               </div>
-              <details class="full">
-                <summary>
-                  <span class="full-open">Read the full story</span>
-                  <span class="full-close">Close the story</span>
-                  <span class="words">689 words</span>
-                </summary>
-                <div class="article">
-                  <p class="byline">By Jack McElwee · The Arbiter · Feb. 18, 2026</p>
-                  <p>Boise has just received 3% of its average snowfall amid a historic snow drought plaguing the West.</p>
-                  <p>The City of Trees averages 21.6 inches of snowfall per year, according to the National Weather Service, with most snow falling in January and February. Since Nov. 1, 2025, Boise has received 0.7 inches of snow.</p>
-                  <p>“We’ve had a very, what we call a blocky pattern,” said Scott Dorval, Idaho News 6 Chief Meteorologist. “High pressure was dominating the West, and the pattern wouldn’t break. It typically would bring in lots of moisture into Idaho [and] a lot of that was heading up to Alaska.”</p>
-                  <p>Boise is on pace to break the record for the lowest snow season, 1933, when 1.1 inches of snow fell on the valley floor.</p>
-                  <p>“In the November, December timeframe, we had these storms come in, and Brundage Mountain, Tamarack Resort, got a good shot of snow. But that was it. It just turned off after that,” Dorval added.</p>
-                  <p>Amid the record-breaking snow drought, Idaho’s ski resorts are finding unique ways to stay afloat.</p>
-                  <p>Tamarack Resort has seen barely a third of its usual summit snowfall, but supplemented early-season snowfall with snowmaking, the creation of artificial snow using compressed air and water.</p>
-                  <p>“We have been lucky enough to have cold temperatures, especially over the last few weeks,” said Tamarack CEO Kara Finley. “We’ve been able to make plenty of snow, that’s allowed us to be fully open.”</p>
-                  <p>The effects of the dry winter have extended east as well — Pomerelle Ski Resort in Albion averages <a href="https://www.pomerelle.com/the-mountain" target="_blank" rel="noopener">500 inches</a> of snow per year. They have seen only 67 inches this season.</p>
-                  <p>Pebble Creek Ski Area in Inkom averages 225 inches of snowfall and has only received <a href="https://www.wunderground.com/dashboard/pws/KIDINKOM26/graph/2026-02-28/2026-02-28/monthly" target="_blank" rel="noopener">around 30</a> inches this year. This shortage led Pebble Creek to close down the slopes on February 9 and 10 in efforts to conserve snow.</p>
-                  <p>Closer to home, just 20% of the yearly average snowfall has fallen at Bogus Basin and the staff is using alternative methods to keep the slopes in good shape. Like Tamarack, Bogus Basin utilizes snow-making machines. They also benefit from a state-of-the-art snow storage system that allows them to hold surplus snow over the summer.</p>
-                  <p>“We piloted a program last summer to test what it would be like to store snow over the summer, which was a success,” said Austin Smith, director of innovation and marketing at Bogus Basin.</p>
-                  <p>The staff came across the Finnish company, Snow Secure, in early 2025 and purchased a <a href="https://bogusbasin.org/about-bogus/culture/experimenting-with-snow-storage-snow-secure-at-bogus-basin/" target="_blank" rel="noopener">pilot system</a> to test over the summer. The goal of this project was to start small and test its capabilities for future snow storage capacity.</p>
-                  <p>“It’s basically like a cooler,” said Smith. “You pile the snow up and you cover it with foam insulated panels that then protect the cold energy that is inside or under the foam insulated panels.”</p>
-                  <p>Bogus Basin was able to store 13,500 cubic meters of the previous winter’s snow through the summer. That snow has supplemented the slopes this winter and kept conditions better than they would be otherwise.</p>
-                  <p>While the snow levels may be low, visitation is not. Resorts across the state encourage visitors to come test the slopes.</p>
-                  <p>“There’s never a better time than a season like this to get up here and try skiing and snowboarding,” said Smith. “A lot of people think that they want to ride powder, but at the end of the day, most people need a lot of practice.”</p>
-                  <p>“Tamarack, Brundage, we both have 100% of our terrain open,” said Finley. “I definitely would encourage people to get up here.”</p>
-                  <p>As for long-term impacts to Boise, Dorval warned the lack of mountain precipitation could lead to a dangerous fire season.</p>
-                  <p>“The worst case scenario would be a low snow pack and then a very wet spring,” said Dorval. “You’ll have a higher danger in the mountains, because of the low snowpack, and then when you have a wet spring, it grows all the grasses … Come July, everything dries out, and then you can get bigger range land fires too.”</p>
-                  <p>Boise is set to receive higher levels of precipitation over the next week.</p>
-                  <p class="source">
-                    First published in The Arbiter on Feb. 18, 2026.
-                    <a href="https://www.arbiteronline.com/2026/02/18/ski-resorts-combat-record-low-snowfall-meteorologist-weighs-in/" target="_blank" rel="noopener">Read the original <span aria-hidden="true">↗</span></a>
-                  </p>
-                  <button type="button" class="full-done" data-close="s01">Close the story</button>
-                </div>
-              </details>
             </li>
           </ol>
         </section>
@@ -1927,143 +450,6 @@
         </footer>
       </main>
     </div>
-
-    <script>
-      (function () {
-        var buttons = document.querySelectorAll('[data-filter]');
-        var stories = document.querySelectorAll('.story');
-        var status = document.getElementById('filter-status');
-
-        buttons.forEach(function (button) {
-          button.addEventListener('click', function () {
-            var filter = button.getAttribute('data-filter');
-            var shown = 0;
-            buttons.forEach(function (other) {
-              other.setAttribute('aria-pressed', String(other === button));
-            });
-            stories.forEach(function (story) {
-              var match = filter === 'all' || story.getAttribute('data-section') === filter;
-              story.hidden = !match;
-              if (match) shown += 1;
-            });
-            status.textContent = 'Showing ' + shown + ' stories';
-          });
-        });
-
-        // Full text: the headline and the bar both open a story; the URL
-        // follows the open story (for example #s06) so a single clip can be shared.
-        function storyText(id) {
-          var story = document.getElementById(id);
-          var details = story && story.querySelector('details.full');
-          if (!details) throw new Error('No full-text block for #' + id);
-          return details;
-        }
-
-        function showInAddress(details, open) {
-          var id = details.closest('.story').id;
-          if (open) {
-            history.replaceState(null, '', '#' + id);
-          } else if (location.hash === '#' + id) {
-            history.replaceState(null, '', location.pathname + location.search);
-          }
-        }
-
-        document.querySelectorAll('details.full > summary').forEach(function (summary) {
-          summary.addEventListener('click', function () {
-            var details = summary.parentElement;
-            showInAddress(details, !details.open);
-          });
-        });
-
-        document.querySelectorAll('[data-open]').forEach(function (link) {
-          link.addEventListener('click', function (event) {
-            event.preventDefault();
-            var details = storyText(link.getAttribute('data-open'));
-            details.open = !details.open;
-            showInAddress(details, details.open);
-          });
-        });
-
-        document.querySelectorAll('[data-close]').forEach(function (button) {
-          button.addEventListener('click', function () {
-            var details = storyText(button.getAttribute('data-close'));
-            details.open = false;
-            showInAddress(details, false);
-            details.closest('.story').scrollIntoView({ block: 'start' });
-            details.querySelector('summary').focus({ preventScroll: true });
-          });
-        });
-
-        function openFromAddress() {
-          var match = /^#(s\d\d)$/.exec(location.hash);
-          if (!match || !document.getElementById(match[1])) return;
-          var details = storyText(match[1]);
-          var story = details.closest('.story');
-          if (story.hidden) document.querySelector('[data-filter="all"]').click();
-          details.open = true;
-          story.scrollIntoView({ block: 'start' });
-        }
-
-        openFromAddress();
-        window.addEventListener('hashchange', openFromAddress);
-
-        var openedForPrint = [];
-        window.addEventListener('beforeprint', function () {
-          document.querySelectorAll('details.full:not([open])').forEach(function (details) {
-            details.open = true;
-            openedForPrint.push(details);
-          });
-        });
-        window.addEventListener('afterprint', function () {
-          openedForPrint.forEach(function (details) {
-            details.open = false;
-          });
-          openedForPrint = [];
-        });
-
-        var links = {};
-        document.querySelectorAll('.nav a[href^="#"]').forEach(function (link) {
-          links[link.getAttribute('href').slice(1)] = link;
-        });
-        var ids = Object.keys(links);
-        var sections = ids.map(function (id) {
-          var section = document.getElementById(id);
-          if (!section) throw new Error('Nav link #' + id + ' has no matching section');
-          return section;
-        });
-
-        function markCurrent() {
-          var line = window.innerHeight * 0.35;
-          var current = ids[0];
-          sections.forEach(function (section) {
-            if (section.getBoundingClientRect().top <= line) current = section.id;
-          });
-          var root = document.documentElement;
-          if (window.innerHeight + window.scrollY >= root.scrollHeight - 2) {
-            current = ids[ids.length - 1];
-          }
-          ids.forEach(function (id) {
-            if (id === current) links[id].setAttribute('aria-current', 'location');
-            else links[id].removeAttribute('aria-current');
-          });
-        }
-
-        var queued = false;
-        window.addEventListener(
-          'scroll',
-          function () {
-            if (queued) return;
-            queued = true;
-            requestAnimationFrame(function () {
-              queued = false;
-              markCurrent();
-            });
-          },
-          { passive: true }
-        );
-        window.addEventListener('resize', markCurrent);
-        markCurrent();
-      })();
-    </script>
+    <script src="assets/site.js"></script>
   </body>
 </html>
