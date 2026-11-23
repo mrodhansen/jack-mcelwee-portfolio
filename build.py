@@ -132,6 +132,8 @@ def head(title, description, prefix, extra):
     <link rel="preconnect" href="https://i0.wp.com" />
     <link href="{e(FONTS)}" rel="stylesheet" />
     <link href="{prefix}assets/site.css" rel="stylesheet" />
+    <link href="{prefix}assets/themes.css" rel="stylesheet" />
+    <script src="{prefix}assets/theme.js"></script>
   </head>'''
 
 
@@ -308,6 +310,15 @@ def index_page(stories):
               </dl>
             </div>
           </div>
+
+          <fieldset class="theme-picker" id="theme-picker" hidden>
+            <legend class="label">Site theme</legend>
+            <p class="theme-note">
+              Pick a look for this site. Your choice is saved in this browser and used on every page.
+            </p>
+            <div class="theme-options"></div>
+            <p class="theme-warn" role="status" hidden></p>
+          </fieldset>
         </section>
 
         <footer class="foot">
