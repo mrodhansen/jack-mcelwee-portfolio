@@ -2,7 +2,7 @@
 
 A portfolio for Jack McElwee, news reporter for [The Arbiter](https://www.arbiteronline.com/author/jackmcelwee/), Boise State University's independent student newspaper.
 
-Live site: https://mrodhansen.github.io/jack-mcelwee-portfolio/
+Live site: https://jackmcelwee.com/
 
 The home page lists every story. Clicking a headline opens that story's own page (`stories/<name>/`) with a link to the original on The Arbiter at the top, then the section, date, headline, byline, photo and full text.
 

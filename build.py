@@ -14,7 +14,7 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-SITE_URL = "https://mrodhansen.github.io/jack-mcelwee-portfolio/"
+SITE_URL = "https://jackmcelwee.com/"
 AUTHOR_PAGE = "https://www.arbiteronline.com/author/jackmcelwee/"
 AUTHOR = "Jack McElwee"
 SECTIONS = ("News", "Culture")
